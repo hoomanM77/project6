@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="welcome to my first website">
+    <meta name="keyword" content="HTML,CSS,PHP,developer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <ul class="list-group todos mx-auto text-light"></ul>
+    <form class="add text-center my-4" autocomplete="off">
+        <label class="text-light mb-2">
+            Add New Todo...
+        </label>
+        <input id="input" type="text" class="form-control m-auto" name="add"/>
+        <span class="text-danger warning">&starf;Enter a valid Value!</span>
+    </form>
+</div>
+<div class="modal " id="modal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-danger">Alert</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <h5>Todo Item has been removed!</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="javascript/Script.js"></script>
+<script src="javascript/bootstrap.bundle.min.js"></script>
+</body>
+</html>
